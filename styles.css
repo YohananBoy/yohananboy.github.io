@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gif-left{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px;
+}
+
+.gif-right{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px;
+}
+
+h1 {
+    font-size: 9em;
+    margin: 0;
+}
+
+h4 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 10px;
+    clear: both;
+}
+
+section {
+    width: 100%;
+    text-align: center;
+}
+
+.atividades {
+    color: rgb(6, 4, 20);
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    width: 100%;
+    padding: 5px 0;
+    bottom: 0;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+.loud {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid rgb(63,205,55);
+    background-color: rgb(21,21,21);
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.loud:hover {
+    width: 330px;
+}
