@@ -1,0 +1,202 @@
+/*
+laranja: rgb(246,94,0);
+cinza-azulado: rgb(13,31,41);
+azul-escuro: rgb(1, 17, 23);
+*/
+
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing:border-box;
+    margin: 0;
+}
+
+.top mark {
+    color: rgb(246,94,0);
+    text-transform: lowercase;
+    background-color: rgb(255,255,255);
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+section, .divisoria nav {
+    width:900px;
+    margin: auto;
+}
+
+.top img{
+    width: 390px;
+}
+
+.top figure {
+    position:relative;
+    width:auto;
+}
+
+.top article {
+    width: 300px;  
+}
+
+.top figcaption {
+    position: absolute;
+    top: 0;
+    left: 227px;
+    background: rgb(13,31,41);
+    color: rgb(246,94,0);
+    padding: 5px;
+    font-size: 0.7em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.phone {
+    color: #fff;    
+}
+.divisoria {
+    width: 100%;
+    background: rgb(13,31,41);
+}
+
+.divisoria ul {
+    display: flex;
+    flex-direction:row;
+    padding-left: 0;
+    list-style: none;
+    justify-content: center;
+}
+.divisoria li {
+    padding:10px 20px; 
+}
+.divisoria li:first-child, .divisoria li:hover {
+    background-color: rgb(246,94,0);
+    
+}
+
+.divisoria a {
+    text-decoration: none;  
+    color: #fff;
+}
+
+main section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.box {
+    width: 270px;
+    border: 3px solid;
+    border-color: rgb(202, 202, 202);
+    position: relative;
+    padding-bottom: 35px;
+}
+
+.box figure {
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+}
+
+.box figcaption{
+    position:absolute;
+    bottom:-5px;
+    width:100%;
+    padding:5px 5px 15px;
+    text-align: center;
+    background: rgba(0,0,0,0.8); 
+    color: #fff;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 55% 75%, 50% 100%, 45% 75%, 0% 75%);
+}
+
+.box img {
+    width:100%;
+    height: 140px;
+}
+
+.box p {
+    font-size:0.8em;   
+}
+.box button{
+    color: white;
+    background-color: rgb(246,94,0);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    left: 180px;
+    width: 75px;
+    text-align: center;
+}
+footer{
+    background-color: rgb(13,31,41);
+    color: #fff;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.areas-cobertas{
+    width: 400px;
+}
+
+.areas-cobertas h3, p{
+    margin: 15px;;
+}
+
+.contato h3, p{
+    margin: 15px
+}
+
+form{
+    margin: 15px;
+    margin-left: 10px;
+}
+
+.contato input, textarea, button{
+    border-radius: 5px;
+    display: flex;
+    border: none;
+    margin: 5px;
+    color: white;
+}
+
+.contato input, textarea{
+    background: rgb(1, 17, 23);
+    width: 350px;
+}
+
+.contato input::placeholder, textarea::placeholder{
+    color: white;
+}
+
+.contato button{
+    color: white;
+    background-color: rgb(246,94,0);
+    padding: 5px;
+    position: absolute;
+    left: 820px;
+}
+
+.cidades {
+    background-color: rgb(1, 17, 23);
+    border-radius: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 15px;
+    padding: 5px;
+    height: 100px;
+    gap: 20px;
+}
+
+.cidades ul{
+    list-style: none;
+    padding: 0;
+}
