@@ -181,7 +181,7 @@ form{
     background-color: rgb(246,94,0);
     padding: 5px;
     position: absolute;
-    left: 820px;
+    left: 810px;
 }
 
 .cidades {
@@ -199,4 +199,11 @@ form{
 .cidades ul{
     list-style: none;
     padding: 0;
+}
+
+.barra{
+    width: 3px;
+    height: 200px;
+    background-color: rgb(1, 17, 23);
+    margin-top: 40px;
 }
