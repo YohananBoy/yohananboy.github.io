@@ -57,6 +57,15 @@ section {
 .atividades {
     color: rgb(6, 4, 20);
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.atividades div {
+    margin: 10px;
+    border: 3px solid #000;
+    padding: 5px;
 }
 
 ul {
@@ -75,6 +84,12 @@ footer {
     bottom: 0;
     text-align: left;
     font-size: 0.8em;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    
 }
 
 .loud {
