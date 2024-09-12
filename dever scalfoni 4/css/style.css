@@ -1,0 +1,87 @@
+* {
+    font-family: calibri;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 480px;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header div h1, header div p, header div li {
+    margin: 5px;
+}
+
+header div h1 {
+    font-size: 5rem;
+    color: #fff;
+    margin: 0;
+}
+
+header div p {
+    font-size: 1.5rem;
+    color:rgb(220,220,220);
+    margin: 0;
+}
+
+header div ul {
+    margin-top: 30px;
+    display: flex;
+    list-style: none;
+}
+
+header div ul a {
+    text-decoration: none;
+    color: rgb(220,220,220);
+}
+
+.destaque {
+    color: #fff;
+    border: 2px rgb(220,220,220) solid;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+section {
+    margin: 15px;
+}
+
+.artigo h3 {
+    font-size: 2rem;
+    color: rgb(70, 70, 70);
+}
+
+.subtitulo p{
+    margin-top: -7px;
+}
+
+.artigo img{
+    margin-top: 20px;
+}
+
+.p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article {
+    width: 400px;
+}
+
+figure img{
+    width: fit-content;
+    height: fit-content;
+}
