@@ -1,3 +1,10 @@
+html {
+    background-image: url("imagens/emojis/background.png");
+    background-size: 100%;
+    background-position: 0 240px;
+    background-repeat: no-repeat;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -9,27 +16,27 @@ body {
 }
 
 header {
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    padding: 20px 0;
+display: flex;
+}
+
+main {
+    padding-bottom: 288px;
 }
 
 .header-content {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
 }
 
-.gif-left{
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 20px;
+.cabeça {
+    display: flex;
+    flex-direction: column;
 }
 
-.gif-right{
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 20px;
+.imagens img {
+    width: 300px;
 }
 
 h1 {
@@ -49,11 +56,6 @@ hr {
     clear: both;
 }
 
-section {
-    width: 100%;
-    text-align: center;
-}
-
 .atividades {
     color: rgb(6, 4, 20);
     font-weight: bold;
@@ -66,6 +68,7 @@ section {
     margin: 10px;
     border: 3px solid #000;
     padding: 5px;
+    background-color: #fff;
 }
 
 ul {
@@ -79,11 +82,15 @@ a {
 }
 
 footer {
+    display: flex;
     width: 100%;
     padding: 5px 0;
     bottom: 0;
     text-align: left;
     font-size: 0.8em;
+    justify-content: left;
+    align-items: baseline;
+    flex-direction: column;
 }
 
 footer div {
@@ -105,4 +112,11 @@ footer div {
 
 .loud:hover {
     width: 330px;
+}
+
+.voltar {
+    margin: 5px;
+    margin-top: -41px;
+    padding: 5px;
+    border: #000 2px solid;
 }
