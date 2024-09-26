@@ -8,6 +8,10 @@ header {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    width: 1200px;
+}
+.container section {
+    max-width: 1200px;
 }
 
 .centro {
@@ -58,10 +62,19 @@ nav ul li a {
     margin-bottom: 60px;
 }
 
+.cinza a {
+    color: #19bc9b;
+    text-decoration: underline;
+}
+
 .boxes {
     display: flex;
     justify-content: space-around;
     width: 1200px;
+}
+
+.branca {
+    width: 13   00px;
 }
 
 .box {
@@ -82,4 +95,81 @@ nav ul li a {
     color: #fff;
     padding: 15px;
     font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin-top: 60px;
+}
+
+.cards a {
+    background-color: #13a085;
+    color: #fff;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: min-content;
+    align-items: center;
+}
+
+.icones h2 {
+    margin-top: 60px;
+}
+
+.icones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.icones ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.icones i {
+    color: #fff;
+    background-color: #13a085;
+    padding: 20px;
+    font-size: 6.5rem;
+    border-radius: 75px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #13a085;
+    padding: 70px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    color: #fff;
+    gap: 15px;
+    margin: 20px 0 20px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer i {
+    color: #fff;
+    background-color: #19bc9b;
+    padding: 5px;
+    font-size: 2rem;
 }
