@@ -10,6 +10,7 @@ header {
     flex-direction: column;
     width: 1200px;
 }
+
 .container section {
     max-width: 1200px;
 }
@@ -73,10 +74,6 @@ nav ul li a {
     width: 1200px;
 }
 
-.branca {
-    width: 13   00px;
-}
-
 .box {
     max-width: 250px;
     text-align: center;
@@ -102,6 +99,7 @@ nav ul li a {
     justify-content: space-between;
     width: 1200px;
     margin-top: 60px;
+    padding-bottom: 60px;
 }
 
 .cards a {
