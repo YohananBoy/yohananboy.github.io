@@ -20,7 +20,9 @@ display: flex;
 }
 
 main {
-    padding-bottom: 288px;
+    display: flex;
+    flex: 1 0 auto;
+    height: 62vh;
 }
 
 .header-content {
@@ -69,6 +71,8 @@ hr {
     border: 3px solid #000;
     padding: 5px;
     background-color: #fff;
+    min-height: min-content;
+    max-height: 200px;
 }
 
 ul {
@@ -91,6 +95,7 @@ footer {
     justify-content: left;
     align-items: baseline;
     flex-direction: column;
+    flex-shrink: 0;
 }
 
 footer div {
@@ -119,4 +124,27 @@ footer div {
     margin-top: -41px;
     padding: 5px;
     border: #000 2px solid;
+}
+
+.revisoes {
+    color: rgb(6, 4, 20);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    border: 3px solid #000;
+    padding: 5px;
+    background-color: #fff;
+    min-height: min-content;
+    max-height: 200px;
+}
+
+.revisoes div {
+    display: flex;
+    flex-direction: row;
+}
+
+.revisoes div ul {
+    margin: 0 10px 0 10px;
 }
