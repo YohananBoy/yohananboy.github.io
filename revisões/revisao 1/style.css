@@ -69,6 +69,11 @@ header nav ul li {
     border-radius: 7px 7px 0px 0px;
 }
 
+.destaque {
+    background-color: #fff;
+    color: #2056ac;
+}
+
 header nav ul li a:hover {
     background-color: #fff;
     color: #2056ac;
@@ -195,7 +200,7 @@ footer a {
     text-decoration: none;
 }
 
-.icones ul{
+.icones ul {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -209,4 +214,8 @@ footer a {
     background-color: #3263b3;
     position: relative;
     bottom: 100px;
+}
+
+.sturti {
+    text-decoration: underline;
 }
