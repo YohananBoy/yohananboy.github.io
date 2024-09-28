@@ -403,12 +403,20 @@ footer div {
 
     header nav ul {
         padding: 0 2px 0 2px;
-        gap: 2px;
+        gap: 0px;
+    }
+
+    header nav ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: fit-content;
     }
 
     header nav ul a {
         padding: 5px;
-        font-size: .7rem;
+        font-size: .6rem;
     }
 
     .secreto {
