@@ -401,6 +401,14 @@ footer div {
 
     /*HEADER*/
 
+    header h1 {
+        line-height: 2rem
+    }
+
+    header h2 {
+        margin-top: -10px;
+    }
+
     header nav ul {
         padding: 0 2px 0 2px;
         gap: 0px;
@@ -427,6 +435,6 @@ footer div {
     /*HOME*/
 
     .home {
-        max-width: 400px;
+        max-width: 350px;
     }
 }
