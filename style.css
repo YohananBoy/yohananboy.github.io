@@ -411,12 +411,13 @@ footer div {
         align-items: center;
         justify-content: center;
         height: 30px;
-        width: fit-content;
+        width: 55px;
     }
 
     header nav ul a {
         padding: 5px;
         font-size: .6rem;
+        line-height: 0.5rem
     }
 
     .secreto {
