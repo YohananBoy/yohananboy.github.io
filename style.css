@@ -402,11 +402,11 @@ footer div {
     /*HEADER*/
 
     header h1 {
-        font-size: 2rem
+        font-size: 1.6rem
     }
 
     header h2 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-top: -10px;
     }
 
@@ -436,6 +436,6 @@ footer div {
     /*HOME*/
 
     .home {
-        max-width: 350px;
+        max-width: 300px;
     }
 }
