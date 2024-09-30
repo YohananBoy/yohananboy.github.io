@@ -114,6 +114,7 @@ nav ul li a {
     flex-direction: column;
     max-width: min-content;
     align-items: center;
+    text-align: center;
 }
 
 .icones h2 {
