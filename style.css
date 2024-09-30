@@ -393,12 +393,6 @@ footer div {
 
     /*GERAL*/
     .container {
-        max-width: 700px;
-    }
-
-    /*HOME*/
-
-    .home {
         max-width: 600px;
     }
 }
@@ -407,7 +401,7 @@ footer div {
 
     /*GERAL*/
     .container {
-        max-width: 500px;
+        max-width: 450px;
     }
 
     /*HEADER*/
@@ -442,12 +436,6 @@ footer div {
 
     .secreto {
         color: #777598;
-    }
-
-    /*HOME*/
-
-    .home {
-        max-width: 300px;
     }
 }
 
