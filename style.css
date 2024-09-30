@@ -250,7 +250,8 @@ main h2 {
 
 footer {
     background-color: #010424;
-    position: relative; /* ou static */
+    position: relative;
+    /* ou static */
     z-index: 10;
 }
 
@@ -390,6 +391,11 @@ footer div {
 
 @media screen and (max-width: 828px) {
 
+    /*GERAL*/
+    .container {
+        max-width: 700px;
+    }
+
     /*HOME*/
 
     .home {
@@ -398,6 +404,11 @@ footer div {
 }
 
 @media screen and (max-width: 650px) {
+
+    /*GERAL*/
+    .container {
+        max-width: 500px;
+    }
 
     /*HEADER*/
 
@@ -438,4 +449,11 @@ footer div {
     .home {
         max-width: 300px;
     }
+}
+
+@media screen and (max-width: 400px) {
+        /*GERAL*/
+        .container {
+            max-width: 300px;
+        }
 }
