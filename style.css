@@ -291,7 +291,11 @@ footer div {
 }
 
 .atividade ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     list-style: none;
+    height: 100%;
 }
 
 /*REVISÕES*/
