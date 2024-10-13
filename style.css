@@ -132,12 +132,11 @@ h2 {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
 }
 
 p {
-    font-size: 1.5rem;
     color: #777598;
 }
 
@@ -251,7 +250,6 @@ main h2 {
 footer {
     background-color: #010424;
     position: relative;
-    /* ou static */
     z-index: 10;
 }
 
@@ -263,6 +261,54 @@ footer div {
 
 .home {
     max-width: 1200px;
+}
+
+.escalfoni {
+    color: #9997ba;
+    text-decoration: underline;
+}
+
+.redes {
+    max-width: 1200px;
+}
+
+.redes ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    gap: 100px;
+    margin: 0 60px;
+}
+
+.redes ul li i {
+    font-size: 3.5rem;
+}
+
+.sociais {
+    display: flex;
+    flex-direction: row;
+}
+
+.sociais p {
+    max-width: 900px;
+}
+
+.sociais a {
+    transition: .3s;
+    display: block;
+}
+
+.youtube a:hover {
+    color: #fe0002;
+    transform: scale(1.2);
+}
+
+.tiktok a:hover {
+    color: #111111;
+    filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
+    /*codigo do tik tok nao criado por mim, fonte: https://stackoverflow.com/questions/66933650/how-can-i-replicate-the-tiktok-logo-in-fontawesome-with-colors*/
+    transform: scale(1.2);
 }
 
 /*ATIVIDADES*/
@@ -370,6 +416,10 @@ footer div {
         max-width: 800px;
     }
 
+    .redes {
+        max-width: 800px;
+    }
+
     /*ATIVIDADES*/
 
     .atividade {
@@ -441,11 +491,23 @@ footer div {
     .secreto {
         color: #777598;
     }
+
+    /*HOME*/
+    .sociais {
+        flex-direction: column;
+    }
+
+    .redes ul {
+        gap: 50px;
+        margin: 30px;
+    }
 }
 
 @media screen and (max-width: 400px) {
-        /*GERAL*/
-        .container {
-            max-width: 300px;
-        }
+
+    /*GERAL*/
+    .container {
+        max-width: 300px;
+    }
+
 }
