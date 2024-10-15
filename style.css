@@ -470,8 +470,7 @@ footer div {
     }
 
     header nav ul {
-        padding: 0 2px 0 2px;
-        gap: 0px;
+        gap: 0;
     }
 
     header nav ul li {
@@ -489,7 +488,7 @@ footer div {
     }
 
     .secreto {
-        color: #777598;
+        margin-right: -100px;
     }
 
     /*HOME*/
