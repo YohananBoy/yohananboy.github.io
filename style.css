@@ -215,7 +215,7 @@ header a {
 
 .secreto {
     display: inline-block;
-    color: #010424;
+    color: transparent;
 }
 
 .secreto:hover {
@@ -510,4 +510,10 @@ footer div {
         max-width: 300px;
     }
 
+}
+
+/*secreto*/
+.nilso {
+    width: 100%;
+    height: 100%;
 }
