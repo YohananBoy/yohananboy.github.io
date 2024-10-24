@@ -10,13 +10,20 @@ body {
     justify-content: center;
 }
 
+figure {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
 figure img {
+    width: 100%;
     margin: 0 0 40px 0;
-    border-radius: 2% 0 0 0;
+    object-fit: cover;
 }
 
 h2 {
-    margin: 0 0 10px 0;
+    margin: 10px 0;
 }
 
 p {
@@ -37,38 +44,78 @@ a {
     height: 60%;
 }
 
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    border: 2px solid #888;
+    width: 70%;
+    margin: 10px;
+    /* padding: 10px; */
+}
+
 @media screen and (max-width: 539px) {
     .card {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        box-sizing: border-box;
-        border: 2px solid #888;
-        border-radius: 2%;
         width: 70%;
         min-width: 300px;
         height: 500px;
-        margin: 10px;
+    }
+
+    figure {
+        display: block;
+    }
+
+    figure img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
 @media screen and (min-width: 540px) and (max-width: 991px) {
     .card {
-        display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        box-sizing: border-box;
-        border: 2px solid #888;
-        border-radius: 2%;
         width: 90%;
-        min-width: 300px;
-        height: 500px;
-        margin: 10px;
+        min-width: 530px;
+    }
+
+    figure {
+        height: 100%;
     }
 
     figure img {
+        margin: 0;
         height: 100%;
+        min-width: 266px;
+    }
+
+    .text {
+        margin-left: 5px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .card {
+        min-width: 900px;
+        max-width: 1000px;
+    }
+
+    figure {
+        width: 400px;
+        height:100%;
+        margin: 0;
+    }
+
+    figure img {
+        margin: 0;
+        max-width: 400px;
+        height: 100%;
+    }
+
+    .text p{
+        max-width: 590px;
     }
 }
