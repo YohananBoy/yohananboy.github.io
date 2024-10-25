@@ -122,12 +122,12 @@ body {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #fff;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #fff;
 }
 
@@ -169,9 +169,11 @@ a:hover {
 .container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 1200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
 }
 
 
@@ -182,7 +184,7 @@ header {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
     background: linear-gradient(#010424, #1b213f);
     padding: 20px;
@@ -211,6 +213,12 @@ header nav ul {
 
 header a {
     color: #777598;
+}
+
+header:only-child {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .secreto {
@@ -251,10 +259,67 @@ footer {
     background-color: #010424;
     position: relative;
     z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 footer div {
     margin: 20px;
+}
+
+footer:only-child {
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100%;
+}
+
+.barra-vertical {
+    height: 80%;
+    width: 1px;
+    background-color: #9997ba;
+}
+
+.icones {
+    display: flex;
+}
+
+.icones ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    gap: 55px;
+}
+
+.icones li {
+    display: flex;
+}
+
+.icones i {
+    font-size: 2rem;
+}
+
+.icones a {
+    transition: .3s ease-in-out;
+    display: block;
+}
+
+.icones a:hover {
+    transform: scale(1.2);
+}
+
+.youtube a:hover {
+    color: #fe0002;
+
+}
+
+.tiktok a:hover {
+    color: #111111;
+    filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
+    /*codigo do tik tok nao criado por mim, fonte: https://stackoverflow.com/questions/66933650/how-can-i-replicate-the-tiktok-logo-in-fontawesome-with-colors*/
+    transform: scale(1.2);
 }
 
 /*HOME*/
@@ -268,48 +333,40 @@ footer div {
     text-decoration: underline;
 }
 
-.redes {
-    max-width: 1200px;
-}
-
-.redes ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    gap: 100px;
-    margin: 0 60px;
-}
-
-.redes ul li i {
-    font-size: 3.5rem;
-}
-
-.sociais {
+.skills ul {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    margin: 15px;
 }
 
-.sociais p {
-    max-width: 900px;
+.skills li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: .3s ease;
 }
 
-.sociais a {
-    transition: .3s;
-    display: block;
+.skills i,
+.skills svg {
+    font-size: 5rem;
+    color: #9997ba;
+    transition: .3s ease;
 }
 
-.youtube a:hover {
-    color: #fe0002;
+.skills li:hover {
     transform: scale(1.2);
 }
 
-.tiktok a:hover {
-    color: #111111;
-    filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
-    /*codigo do tik tok nao criado por mim, fonte: https://stackoverflow.com/questions/66933650/how-can-i-replicate-the-tiktok-logo-in-fontawesome-with-colors*/
-    transform: scale(1.2);
+.skills i:hover,
+.skills svg:hover {
+    color: #fff;
 }
+
 
 /*ATIVIDADES*/
 
@@ -330,8 +387,8 @@ footer div {
     flex-direction: column;
     margin: 0 10px 30px 10px;
     padding: 20px;
-    min-width: 300px;
-    max-width: 350px;
+    min-width: 200px;
+    max-width: fit-content;
     border: 2px solid #fff;
     border-radius: 35px;
 }
@@ -362,8 +419,8 @@ footer div {
     flex-direction: column;
     margin: 20px;
     padding: 20px;
-    min-width: 300px;
-    max-width: 350px;
+    min-width: 232px;
+    max-width: fit-content;
     border: 2px solid #fff;
     border-radius: 35px;
 }
@@ -413,10 +470,6 @@ footer div {
     /*HOME*/
 
     .home {
-        max-width: 800px;
-    }
-
-    .redes {
         max-width: 800px;
     }
 
@@ -494,11 +547,6 @@ footer div {
     /*HOME*/
     .sociais {
         flex-direction: column;
-    }
-
-    .redes ul {
-        gap: 50px;
-        margin: 30px;
     }
 }
 
