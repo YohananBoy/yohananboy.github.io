@@ -13,39 +13,9 @@ body {
     height: 100vh;
 }
 
-.kanit-thin {
-    font-family: "Kanit", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
-
-.kanit-extralight {
-    font-family: "Kanit", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-}
-
-.kanit-light {
-    font-family: "Kanit", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
 .kanit-regular {
     font-family: "Kanit", sans-serif;
     font-weight: 400;
-    font-style: normal;
-}
-
-.kanit-medium {
-    font-family: "Kanit", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.kanit-semibold {
-    font-family: "Kanit", sans-serif;
-    font-weight: 600;
     font-style: normal;
 }
 
@@ -55,69 +25,10 @@ body {
     font-style: normal;
 }
 
-.kanit-extrabold {
-    font-family: "Kanit", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-}
-
-.kanit-black {
-    font-family: "Kanit", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
-
-.kanit-thin-italic {
-    font-family: "Kanit", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-}
-
-.kanit-extralight-italic {
-    font-family: "Kanit", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-}
-
-.kanit-light-italic {
-    font-family: "Kanit", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-}
 
 .kanit-regular-italic {
     font-family: "Kanit", sans-serif;
     font-weight: 400;
-    font-style: italic;
-}
-
-.kanit-medium-italic {
-    font-family: "Kanit", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-}
-
-.kanit-semibold-italic {
-    font-family: "Kanit", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-}
-
-.kanit-bold-italic {
-    font-family: "Kanit", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
-.kanit-extrabold-italic {
-    font-family: "Kanit", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-}
-
-.kanit-black-italic {
-    font-family: "Kanit", sans-serif;
-    font-weight: 900;
     font-style: italic;
 }
 
@@ -156,9 +67,9 @@ a:hover {
 }
 
 .barra {
-    height: 2px;
+    box-sizing: border-box;
     width: 100%;
-    background-color: #777598;
+    border: #777598 1px solid;
 }
 
 .bi-arrow-right {
@@ -172,7 +83,6 @@ a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: 1000px;
     width: 100%;
 }
 
@@ -196,16 +106,9 @@ header h1 {
     color: #fff;
 }
 
-header h2 {
-    margin-top: -30px;
-}
-
 header nav ul {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    padding: 15px;
-    padding-left: 30px;
     border: 2px solid #fff;
     border-radius: 35px;
     list-style: none;
@@ -274,12 +177,6 @@ footer:only-child {
     min-width: 100%;
 }
 
-.barra-vertical {
-    height: 80%;
-    width: 1px;
-    background-color: #9997ba;
-}
-
 .icones {
     display: flex;
 }
@@ -287,6 +184,7 @@ footer:only-child {
 .icones ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     list-style: none;
@@ -302,7 +200,7 @@ footer:only-child {
 }
 
 .icones a {
-    transition: .3s ease-in-out;
+    transition: .3s ease;
     display: block;
 }
 
@@ -324,22 +222,29 @@ footer:only-child {
 
 /*HOME*/
 
-.home {
-    max-width: 1200px;
-}
-
 .escalfoni {
     color: #9997ba;
     text-decoration: underline;
 }
 
+.skills .container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.skills .container div {
+    flex-direction: column;
+}
+
 .skills ul {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     list-style: none;
     margin: 15px;
+    gap: 10px;
 }
 
 .skills li {
@@ -431,136 +336,240 @@ footer:only-child {
 
 /*RESPONSIVIDADE*/
 
-@media screen and (max-width: 1057px) {
+@media screen and (min-width: 320px) {
 
     /*GERAL*/
-
     h1 {
-        font-size: 3rem;
+        font-size: 1.9rem;
+        color: #fff;
     }
 
     h2 {
-        font-size: 1.5rem;
-    }
-
-    h3 {
-        font-size: 1rem;
+        font-size: 1.4rem;
+        color: #fff;
     }
 
     p {
         font-size: 1rem;
     }
 
-    a {
-        font-size: 1rem;
+    .container {
+        max-width: 290px;
     }
 
     /*HEADER*/
-
-    header {
-        flex-direction: column;
-    }
-
-    header nav ul {
-        gap: 10px;
-        padding: 5px;
-        padding-left: 30px;
-    }
-
-    /*HOME*/
-
-    .home {
-        max-width: 800px;
-    }
-
-    /*ATIVIDADES*/
-
-    .atividade {
-        padding: 5px;
-        min-width: 200px;
-        max-width: 250px;
-        border-radius: 18px;
-    }
-
-    /*REVISOES*/
-
-    .revisoes {
-        flex-direction: column;
-    }
-
-    .revisao {
-        padding: 10px;
-        min-width: 200px;
-        max-width: 250px;
-        border-radius: 15px;
-    }
-}
-
-@media screen and (max-width: 828px) {
-
-    /*GERAL*/
-    .container {
-        max-width: 600px;
-    }
-}
-
-@media screen and (max-width: 650px) {
-
-    /*GERAL*/
-    .container {
-        max-width: 450px;
-    }
-
-    /*HEADER*/
-
-    header h1 {
-        font-size: 1.6rem
-    }
-
     header h2 {
-        font-size: 1rem;
-        margin-top: -10px;
+        margin-top: -20px;
+    }
+
+    header .container {
+        align-items: center;
+        justify-content: center;
     }
 
     header nav ul {
         gap: 0;
+        padding: 0 0 0 20px;
     }
 
-    header nav ul li {
+    header nav li {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 30px;
-        width: 55px;
     }
 
-    header nav ul a {
+    header a {
+        font-size: .7rem;
+        letter-spacing: -1.5px;
         padding: 5px;
-        font-size: .6rem;
-        line-height: 0.5rem
     }
 
-    .secreto {
-        margin-right: -100px;
+    /*FOOTER*/
+    footer .container {
+        flex-direction: column-reverse;
+    }
+
+    footer .direitos p {
+        font-size: .9rem;
     }
 
     /*HOME*/
-    .sociais {
-        flex-direction: column;
+
+    .home a {
+        font-size: 1rem;
+    }
+
+    .skills ul {
+        gap: 50px;
+    }
+
+    .skills li:nth-child(3),
+    .skills li:nth-child(4) {
+        margin-top: -40px;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
 
     /*GERAL*/
     .container {
-        max-width: 300px;
+        width: 67.5%;
+        min-width: 441px;
+        max-width: 728px;
+        margin: 0 auto;
+    }
+
+    /**/
+
+    /*FOOTER*/
+    footer .container {
+        flex-direction: row;
+    }
+
+    footer .icones ul {
+        gap: 20px;
+    }
+
+    .direitos,
+    .icones {
+        margin: 10px;
+    }
+
+    /*HOME*/
+    .skills i,
+    .skills svg {
+        font-size: 4.5rem;
+    }
+
+    .skills li:nth-child(3),
+    .skills li:nth-child(4) {
+        margin: 0;
     }
 
 }
 
-/*secreto*/
-.nilso {
-    width: 100%;
-    height: 100%;
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /*GERAL*/
+    h1 {
+        font-size: 3.5rem;
+        ;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    a {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        max-width: 720px;
+        width: 100%;
+    }
+
+    /*HEADER*/
+    header .container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    header h2 {
+        margin-top: -30px;
+    }
+
+    header nav ul {
+        gap: 20px;
+        padding: 10px;
+        padding-left: 35px;
+    }
+
+    header a {
+        font-size: 1.2rem;
+        padding-bottom: 0;
+    }
+
+    /*FOOTER*/
+    footer .container {
+        flex-direction: row;
+    }
+
+    /*HOME*/
+    .home a {
+        font-size: 1.2rem;
+    }
+
+    .skills li:nth-child(3),
+    .skills li:nth-child(4) {
+        margin: 0;
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+
+
+    /*GERAL*/
+    h1 {
+        font-size: 3.5rem;
+        ;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    a {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        max-width: 960px;
+        width: 960px;
+    }
+
+    /*HEADER*/
+    header .container {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header h2 {
+        margin-top: -30px;
+    }
+
+    header nav ul {
+        gap: 10px;
+        padding: 10px;
+        padding-left: 35px;
+    }
+
+    header a {
+        font-size: 1.2rem;
+        padding-bottom: 0;
+    }
+
+    /*FOOTER*/
+    footer .container {
+        flex-direction: row;
+    }
+
+    /*HOME*/
+    .home a {
+        font-size: 1.2rem;
+    }
+
+    .skills li:nth-child(3),
+    .skills li:nth-child(4) {
+        margin: 0;
+    }
+
+
 }
