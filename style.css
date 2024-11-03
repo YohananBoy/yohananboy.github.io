@@ -273,6 +273,60 @@ footer:only-child {
     color: #fff;
 }
 
+/*PROJETOS*/
+/* PROJETOS */
+.projetos ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.projetos li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projetos a {
+    transition: .3s ease color;
+    transition: .3s ease transform;
+}
+
+.projetos img {
+    object-fit: cover;
+    object-position: top;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 470 / 253;
+}
+
+
+.projetos a:hover {
+    transform: scale(1.05);
+}
+
+.projetos .projeto-info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.projetos .github {
+    transform: scale(1.5);
+}
+
+.projetos .github:hover {
+    transform: scale(1.6);
+}
+
+.projetos h3 {
+    color: #9997ba;
+}
+
 
 /*ATIVIDADES*/
 
@@ -378,8 +432,7 @@ footer:only-child {
     }
 
     header a {
-        font-size: .7rem;
-        letter-spacing: -1.5px;
+        font-size: 1rem;
         padding: 5px;
     }
 
@@ -418,8 +471,6 @@ footer:only-child {
         margin: 0 auto;
     }
 
-    /**/
-
     /*FOOTER*/
     footer .container {
         flex-direction: row;
@@ -444,6 +495,12 @@ footer:only-child {
     .skills li:nth-child(4) {
         margin: 0;
     }
+
+    /*PROJETOS*/
+    /* .projetos img {
+        min-width: 492px;
+        max-height: 255px;
+    } */
 
 }
 
@@ -572,5 +629,9 @@ footer:only-child {
         margin: 0;
     }
 
+    /*PROJETOS*/
+    .projetos ul {
+        flex-wrap: nowrap;
+    }
 
 }
