@@ -274,7 +274,6 @@ footer:only-child {
 }
 
 /*PROJETOS*/
-/* PROJETOS */
 .projetos ul {
     list-style: none;
     display: flex;
@@ -496,12 +495,6 @@ footer:only-child {
         margin: 0;
     }
 
-    /*PROJETOS*/
-    /* .projetos img {
-        min-width: 492px;
-        max-height: 255px;
-    } */
-
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -633,5 +626,4 @@ footer:only-child {
     .projetos ul {
         flex-wrap: nowrap;
     }
-
 }
