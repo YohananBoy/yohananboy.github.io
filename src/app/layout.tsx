@@ -3,6 +3,7 @@ import "~/styles/globals.css";
 import { type Metadata } from "next";
 import { Geist } from "next/font/google";
 import Header from "./_components/header";
+import Footer from "./_components/footer";
 
 export const metadata: Metadata = {
   title: "Yohanan Boy - Portifólio",
@@ -21,9 +22,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${geist.className} scroll-smooth`}>
-      <body>
+      <body className="bg-[#0b132b] text-white">
         <Header></Header>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );

@@ -13,15 +13,26 @@ export default function Menu() {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuLink href="#inicio">Inicio</NavigationMenuLink>
+            <NavigationMenuLink
+              href="#inicio"
+              className="hover:text-neutral-900 focus:scale-105"
+            >
+              Inicio
+            </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuLink href="#habilidades">
+            <NavigationMenuLink
+              href="#habilidades"
+              className="hover:text-neutral-900 focus:scale-105"
+            >
               Habilidades
             </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuLink href="#projetos">
+            <NavigationMenuLink
+              href="#projetos"
+              className="hover:text-neutral-900 focus:scale-105"
+            >
               Projetos/Atividades
             </NavigationMenuLink>
           </NavigationMenuItem>
